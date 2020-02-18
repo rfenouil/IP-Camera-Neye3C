@@ -200,7 +200,15 @@ First: `/mnt`, `/dat`, `/usr/local/etc`, and `/etc` seem all mounted to the same
 The application using most ressources is called `sCamera` (in `/root/edvr/sCamera`).
 It stands next to an `update` binary and `update.sh` script that is expecting a file called 'hy_edvr_update.tar.gz'...
 
-Many scripts and executables in `/etc` (probably all accessible from the web server...).
+Many scripts and executables in `/etc` (probably all accessible from the web server...).  
+The `rescue.sh` has the following content:
+```
+echo "rescue>>>>>>>>>>>>>>>>>>>>>>>"
+fw_setenv bootargs 'console=ttyS0,115200 root=/dev/mtdblock2 rootfstype=squashfs init=/squashfs_init mem=30M mtdparts=spi_flash:320K@0x0(uboot),0x1F0000@0x50000(kernel),0x420000@0x240000(rootfs),0x1a0000@0x660000(config),8M@0x0(all)'
+fw_printenv bootargs
+sync
+echo "rescue<<<<<<<<<<<<<<<<<<<<<<<"
+```
 
 Found `init` and `squashfs_init` files on `/`.
 
