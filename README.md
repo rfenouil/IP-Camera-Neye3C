@@ -1,6 +1,14 @@
+
+[![Gitter](https://badges.gitter.im/IP-Camera-Neye3C/community.svg)](https://gitter.im/IP-Camera-Neye3C/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+Please open issues for discussion or come to gitter.
+Let me know if there is a better way to discuss about this (a forum with topics would be nice but could not find a proper way to integrate that into github).
+
 # Introduction
 
 I have one of these cheap "WiFi Smart Cloud Camera", but I don't like the idea to use the cloud and allow one of these devices to connect to my wifi network and discuss with a remote server.
+
+I suspect there is a lot of cheap "cloud cameras" sharing the same hardware and system but couldn't really find anything about them (google). Let's have a look at it together.
 
 Full specifications (as seen on box stickers):
 
